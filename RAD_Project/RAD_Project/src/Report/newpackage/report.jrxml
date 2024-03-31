@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="16f5f177-4a1e-46b5-a66d-e0c335f19dee">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="ID" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     cgpa.`Stu_ID` AS cgpa_Stu_ID,
+     cgpa.`Sem1TC` AS cgpa_Sem1TC,
+     cgpa.`Sem2TC` AS cgpa_Sem2TC,
+     cgpa.`Sem3TC` AS cgpa_Sem3TC,
+     cgpa.`Sem4TC` AS cgpa_Sem4TC,
+     cgpa.`Sem5TC` AS cgpa_Sem5TC,
+     cgpa.`Sem6TC` AS cgpa_Sem6TC,
+     cgpa.`Sem7TC` AS cgpa_Sem7TC,
+     cgpa.`Sem8TC` AS cgpa_Sem8TC,
+     cgpa.`TotalCredits` AS cgpa_TotalCredits,
+     cgpa.`Sem1GPA` AS cgpa_Sem1GPA,
+     cgpa.`Sem2GPA` AS cgpa_Sem2GPA,
+     cgpa.`Sem3GPA` AS cgpa_Sem3GPA,
+     cgpa.`Sem4GPA` AS cgpa_Sem4GPA,
+     cgpa.`Sem5GPA` AS cgpa_Sem5GPA,
+     cgpa.`Sem6GPA` AS cgpa_Sem6GPA,
+     cgpa.`Sem7GPA` AS cgpa_Sem7GPA,
+     cgpa.`Sem8GPA` AS cgpa_Sem8GPA,
+     cgpa.`TotalGPA` AS cgpa_TotalGPA,
+     cgpa.`OverAGpa` AS cgpa_OverAGpa
+FROM
+     `cgpa` cgpa where Stu_ID =$P{ID}]]>
+	</queryString>
+	<field name="cgpa_Stu_ID" class="java.lang.String"/>
+	<field name="cgpa_Sem1TC" class="java.lang.Integer"/>
+	<field name="cgpa_Sem2TC" class="java.lang.Integer"/>
+	<field name="cgpa_Sem3TC" class="java.lang.Integer"/>
+	<field name="cgpa_Sem4TC" class="java.lang.Integer"/>
+	<field name="cgpa_Sem5TC" class="java.lang.Integer"/>
+	<field name="cgpa_Sem6TC" class="java.lang.Integer"/>
+	<field name="cgpa_Sem7TC" class="java.lang.Integer"/>
+	<field name="cgpa_Sem8TC" class="java.lang.Integer"/>
+	<field name="cgpa_TotalCredits" class="java.lang.Integer"/>
+	<field name="cgpa_Sem1GPA" class="java.lang.Float"/>
+	<field name="cgpa_Sem2GPA" class="java.lang.Float"/>
+	<field name="cgpa_Sem3GPA" class="java.lang.Float"/>
+	<field name="cgpa_Sem4GPA" class="java.lang.Float"/>
+	<field name="cgpa_Sem5GPA" class="java.lang.Float"/>
+	<field name="cgpa_Sem6GPA" class="java.lang.Float"/>
+	<field name="cgpa_Sem7GPA" class="java.lang.Float"/>
+	<field name="cgpa_Sem8GPA" class="java.lang.Float"/>
+	<field name="cgpa_TotalGPA" class="java.lang.Double"/>
+	<field name="cgpa_OverAGpa" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="23" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="12" y="2" width="100" height="20" uuid="1ad4f413-fb46-408f-a817-e2ab385d43ef"/>
+				<text><![CDATA[cgpa_Stu_ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="153" y="2" width="100" height="20" uuid="01e6217a-54b3-4151-aa2a-2de87bb81411"/>
+				<text><![CDATA[cgpa_OverAGpa]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="41" splitType="Stretch">
+			<textField>
+				<reportElement x="12" y="8" width="100" height="20" uuid="04a1671b-b9c4-4e96-b1e7-64aa68c3c652"/>
+				<textFieldExpression><![CDATA[$F{cgpa_Stu_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="153" y="8" width="100" height="20" uuid="35316830-3d66-4d5d-8ba8-52c94e960ec6"/>
+				<textFieldExpression><![CDATA[$F{cgpa_OverAGpa}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="43" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="55" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="212" splitType="Stretch"/>
+	</summary>
+</jasperReport>

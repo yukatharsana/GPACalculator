@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null"  pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="61c73bb3-d8f1-4630-b942-f9aeb88fdf0d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="ID" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     cgpa.`Stu_ID` AS cgpa_Stu_ID,
+     cgpa.`Sem1GPA` AS cgpa_Sem1GPA,
+     cgpa.`Sem2GPA` AS cgpa_Sem2GPA,
+     cgpa.`Sem3GPA` AS cgpa_Sem3GPA,
+     cgpa.`Sem4GPA` AS cgpa_Sem4GPA,
+     cgpa.`Sem5GPA` AS cgpa_Sem5GPA,
+     cgpa.`Sem6GPA` AS cgpa_Sem6GPA,
+     cgpa.`Sem7GPA` AS cgpa_Sem7GPA,
+     cgpa.`Sem8GPA` AS cgpa_Sem8GPA,
+     cgpa.`TotalGPA` AS cgpa_TotalGPA,
+     cgpa.`OverAGpa` AS cgpa_OverAGpa
+FROM
+     `cgpa` cgpa WHERE STU_ID = $P{ID}]]>
+	</queryString>
+	<field name="cgpa_Stu_ID" class="java.lang.String"/>
+	<field name="cgpa_Sem1GPA" class="java.lang.Float"/>
+	<field name="cgpa_Sem2GPA" class="java.lang.Float"/>
+	<field name="cgpa_Sem3GPA" class="java.lang.Float"/>
+	<field name="cgpa_Sem4GPA" class="java.lang.Float"/>
+	<field name="cgpa_Sem5GPA" class="java.lang.Float"/>
+	<field name="cgpa_Sem6GPA" class="java.lang.Float"/>
+	<field name="cgpa_Sem7GPA" class="java.lang.Float"/>
+	<field name="cgpa_Sem8GPA" class="java.lang.Float"/>
+	<field name="cgpa_TotalGPA" class="java.lang.Double"/>
+	<field name="cgpa_OverAGpa" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="209" y="23" width="208" height="35" uuid="3bb60b4f-9fbc-47bd-b865-ca78960e53fa"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[GPA Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="23" y="0" width="321" height="35" uuid="86109c14-c353-4bb1-98a1-78d65a8cd2d6"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[Uva Wellassa University]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="45" y="41" width="45" height="20" uuid="e95fc21b-1dcc-4086-87a1-42eb9bb5b794"/>
+				<textFieldExpression><![CDATA[$F{cgpa_Stu_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="41" width="100" height="20" uuid="da83747d-0bdd-4a78-be95-8dd7d97ed4ea"/>
+				<textFieldExpression><![CDATA[$F{cgpa_OverAGpa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="41" width="45" height="20" uuid="fe411f40-f910-4532-b104-ccdfde4b9cf0"/>
+				<text><![CDATA[Student]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="41" width="70" height="20" uuid="174b41e5-54ee-48c9-bae3-a8b942adc29c"/>
+				<text><![CDATA[Overall GPA is]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

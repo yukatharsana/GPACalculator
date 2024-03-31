@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Anchorpane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="1366.0" style="-fx-background-color: white; -fx-border-color: #21618C; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Rad_project.RegisterController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="4.0" />
+      <Label layoutX="706.0" layoutY="34.0" prefHeight="52.0" prefWidth="337.0" text="Students Details">
+         <font>
+            <Font name="Book Antiqua Bold" size="40.0" />
+         </font>
+      </Label>
+      <VBox layoutX="557.0" layoutY="184.0" prefHeight="363.0" prefWidth="276.0" spacing="28.0">
+         <children>
+            <Label text="First Name">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Last Name">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Degree Programme">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Acadamic Year">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Faculty">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Department">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Label>
+            <Label lineSpacing="20.0" text="Duration">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="clear_btn" layoutX="689.0" layoutY="621.0" lineSpacing="10.0" mnemonicParsing="false" onAction="#ClearBtnAction" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #21618C; -fx-border-color: #21618C;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="next_btn" layoutX="1039.0" layoutY="621.0" lineSpacing="10.0" mnemonicParsing="false" onAction="#NextBtnAction" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #21618C; -fx-border-color: #21618C;" text="NEXT" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="update_btn" layoutX="804.0" layoutY="621.0" lineSpacing="10.0" mnemonicParsing="false" onAction="#UpdateBtnAction" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #21618C; -fx-border-color: #21618C;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <VBox layoutX="874.0" layoutY="184.0" prefHeight="363.0" prefWidth="337.0" spacing="28.0">
+         <children>
+            <TextField fx:id="firstname" style="-fx-border-color: #21618C;" />
+            <TextField fx:id="lastname" prefHeight="25.0" prefWidth="326.0" style="-fx-border-color: #21618C;" />
+            <TextField fx:id="degree" prefHeight="25.0" prefWidth="326.0" style="-fx-border-color: #21618C;" />
+            <TextField fx:id="Acedemic" prefHeight="25.0" prefWidth="326.0" style="-fx-border-color: #21618C;" />
+            <TextField fx:id="faculty" prefHeight="25.0" prefWidth="326.0" style="-fx-border-color: #21618C;" />
+            <TextField fx:id="department" prefHeight="25.0" prefWidth="326.0" style="-fx-border-color: #21618C;" />
+            <TextField fx:id="duration" prefHeight="25.0" prefWidth="326.0" style="-fx-border-color: #21618C;" />
+         </children>
+      </VBox>
+      <Button fx:id="Add_btn" layoutX="573.0" layoutY="621.0" lineSpacing="10.0" mnemonicParsing="false" onAction="#AddBtnAction" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #21618C; -fx-border-color: #21618C;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <AnchorPane prefHeight="707.0" prefWidth="435.0" style="-fx-background-color: #21618C; -fx-border-color: grey; -fx-border-width: 5;">
+         <children>
+            <ImageView fitHeight="569.0" fitWidth="373.0" layoutX="31.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/student-graduation-gown-holding-certificate-portrait-happy-college-isolated-over-white-background-vertical-shot-39165437%20(1).jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="626.0" layoutY="122.0" text="Student Enrollment No" textFill="#0f1f6f">
+         <font>
+            <Font name="Book Antiqua Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="enrollnumber" layoutX="874.0" layoutY="122.0" prefHeight="27.0" prefWidth="276.0" style="-fx-border-color: #21618C;" />
+      <Button fx:id="DltBtn" layoutX="921.0" layoutY="621.0" lineSpacing="10.0" mnemonicParsing="false" onAction="#DltBtnAction" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #21618C; -fx-border-color: #21618C;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="Search_btn" layoutX="1169.0" layoutY="120.0" lineSpacing="10.0" mnemonicParsing="false" onAction="#SeachrBtnAction" prefHeight="30.0" prefWidth="41.0" style="-fx-background-color: white; -fx-border-color: #21618C;" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <FontAwesomeIconView glyphName="SEARCH" layoutX="1184.0" layoutY="139.0" />
+   </children>
+   <effect>
+      <Glow level="0.03" />
+   </effect>
+</AnchorPane>

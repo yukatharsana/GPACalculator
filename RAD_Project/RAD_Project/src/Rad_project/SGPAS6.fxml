@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Rad_project.SGPAS6Controller">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="-10.0" layoutY="-10.0" prefHeight="728.0" prefWidth="1386.0" style="-fx-background-color: #21618C;">
+               <children>
+                  <Label layoutX="601.0" prefHeight="54.0" prefWidth="217.0" text="Semester 6" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="44.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="61.0" prefHeight="19.0" prefWidth="58.0" text="No" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="127.0" layoutY="61.0" prefHeight="17.0" prefWidth="240.0" text="        Course Name" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="683.0" layoutY="61.0" prefHeight="36.0" prefWidth="81.0" text="Grade" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="558.0" layoutY="61.0" prefHeight="36.0" prefWidth="81.0" text="Credit" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="107.0" layoutY="117.0" prefHeight="36.0" prefWidth="413.0" text="Business Law" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="116.0" lineSpacing="15.0" prefHeight="17.0" prefWidth="37.0" text="1" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="162.0" lineSpacing="15.0" prefHeight="17.0" prefWidth="37.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="205.0" lineSpacing="15.0" prefHeight="17.0" prefWidth="37.0" text="3" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="255.0" lineSpacing="15.0" prefHeight="17.0" prefWidth="37.0" text="4" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="301.0" lineSpacing="15.0" prefHeight="17.0" prefWidth="37.0" text="5" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="340.0" lineSpacing="15.0" prefHeight="17.0" prefWidth="37.0" text="6" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="387.0" lineSpacing="15.0" prefHeight="17.0" prefWidth="37.0" text="7" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="425.0" lineSpacing="15.0" prefHeight="17.0" prefWidth="37.0" text="8" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="469.0" lineSpacing="15.0" prefHeight="17.0" prefWidth="37.0" text="9" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="107.0" layoutY="162.0" prefHeight="17.0" prefWidth="413.0" text="Human Resorces Management" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="107.0" layoutY="205.0" prefHeight="17.0" prefWidth="413.0" text="Project-2" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="107.0" layoutY="247.0" prefHeight="17.0" prefWidth="413.0" text="Research Methodology and Scientific writing" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="107.0" layoutY="297.0" prefHeight="17.0" prefWidth="413.0" text="Software Quality Assurance" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="107.0" layoutY="337.0" prefHeight="36.0" prefWidth="413.0" text="Emerging Technologies in CS and Informatics" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="107.0" layoutY="382.0" prefHeight="17.0" prefWidth="413.0" text="Software Architecture and Design patterns" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="107.0" layoutY="469.0" prefHeight="17.0" prefWidth="413.0" text="Statistical Methods - 2 " textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Sub1C" layoutX="575.0" layoutY="117.0" prefHeight="36.0" prefWidth="28.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="576.0" layoutY="159.0" prefHeight="36.0" prefWidth="28.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="575.0" layoutY="202.0" prefHeight="36.0" prefWidth="28.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="575.0" layoutY="244.0" prefHeight="36.0" prefWidth="28.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="575.0" layoutY="298.0" prefHeight="36.0" prefWidth="28.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="576.0" layoutY="341.0" prefHeight="36.0" prefWidth="28.0" text="1" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="575.0" layoutY="379.0" prefHeight="36.0" prefWidth="28.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="575.0" layoutY="422.0" prefHeight="36.0" prefWidth="28.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="575.0" layoutY="471.0" prefHeight="36.0" prefWidth="28.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="805.0" layoutY="61.0" prefHeight="36.0" prefWidth="116.0" text="GP.Value" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Sub1GPV" layoutX="789.0" layoutY="122.0" />
+                  <TextField fx:id="Sub2GPV" layoutX="789.0" layoutY="165.0" />
+                  <TextField fx:id="Sub3GPV" layoutX="789.0" layoutY="208.0" />
+                  <TextField fx:id="Sub4GPV" layoutX="789.0" layoutY="250.0" />
+                  <TextField fx:id="Sub5GPV" layoutX="789.0" layoutY="299.0" />
+                  <TextField fx:id="Sub6GPV" layoutX="789.0" layoutY="342.0" />
+                  <TextField fx:id="Sub7GPV" layoutX="789.0" layoutY="385.0" />
+                  <TextField fx:id="Sub8GPV" layoutX="789.0" layoutY="428.0" />
+                  <TextField fx:id="Sub9GPV" layoutX="789.0" layoutY="477.0" />
+                  <Label layoutX="1002.0" layoutY="61.0" text="Grade Point" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Sub1GP" layoutX="1002.0" layoutY="122.0" />
+                  <TextField fx:id="Sub2GP" layoutX="1002.0" layoutY="165.0" />
+                  <TextField fx:id="Sub3GP" layoutX="1002.0" layoutY="208.0" />
+                  <TextField fx:id="Sub4GP" layoutX="1000.0" layoutY="250.0" />
+                  <TextField fx:id="Sub5GP" layoutX="1002.0" layoutY="291.0" />
+                  <TextField fx:id="Sub6GP" layoutX="1002.0" layoutY="342.0" />
+                  <TextField fx:id="Sub7GP" layoutX="1002.0" layoutY="385.0" />
+                  <TextField fx:id="Sub8GP" layoutX="1002.0" layoutY="428.0" />
+                  <TextField fx:id="Sub9GP" layoutX="1000.0" layoutY="477.0" />
+                  <TextField fx:id="TotalGP" layoutX="972.0" layoutY="630.0" prefHeight="27.0" prefWidth="209.0" />
+                  <TextField fx:id="GPAS6" layoutX="743.0" layoutY="666.0" prefHeight="25.0" prefWidth="209.0" style="-fx-background-color: white; -fx-border-color: grey;" />
+                  <Label layoutX="302.0" layoutY="623.0" prefHeight="31.0" prefWidth="149.0" text="Total Credit" textFill="#e8d05d">
+                     <font>
+                        <Font name="Bell MT Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="GPASem1" layoutX="441.0" layoutY="664.0" prefHeight="31.0" prefWidth="268.0" text="      GPA for Semester 6" textFill="#e8d05d">
+                     <font>
+                        <Font name="Bell MT Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="724.0" layoutY="623.0" prefHeight="31.0" prefWidth="209.0" text="Total Grade Point" textFill="#e8d05d">
+                     <font>
+                        <Font name="Bell MT Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="BtnAdd" layoutX="1226.0" layoutY="268.0" mnemonicParsing="false" onAction="#BtnAddOnAction" prefHeight="25.0" prefWidth="105.0" text="ADD " />
+                  <Button fx:id="BtnUpdate" layoutX="1226.0" layoutY="328.0" mnemonicParsing="false" onAction="#BtnUpdateOnAction" prefHeight="25.0" prefWidth="105.0" text="Update" />
+                  <Button fx:id="BtnDelete" layoutX="1226.0" layoutY="390.0" mnemonicParsing="false" onAction="#BtnDeleteOn" prefHeight="25.0" prefWidth="105.0" text="Delete" />
+                  <Button fx:id="BtnClear" layoutX="1226.0" layoutY="446.0" mnemonicParsing="false" onAction="#BtnClearOnAction" prefHeight="25.0" prefWidth="105.0" text="Clear" />
+                  <TextField fx:id="enrollnumber" layoutX="970.0" layoutY="15.0" prefHeight="25.0" prefWidth="209.0" promptText="Student Enrollment No" />
+                  <Button fx:id="BtnSearch" layoutX="1189.0" layoutY="15.0" mnemonicParsing="false" onAction="#BtnSearchOnAction" prefHeight="25.0" prefWidth="28.0" />
+                  <FontAwesomeIconView glyphName="SEARCH" layoutX="1195.0" layoutY="31.0" wrappingWidth="16.0" />
+                  <Button fx:id="btnCal" layoutX="1226.0" layoutY="208.0" mnemonicParsing="false" onAction="#BtnCalOnAction" prefHeight="25.0" prefWidth="105.0" text="Calculate" />
+                  <Label layoutX="571.0" layoutY="621.0" prefHeight="36.0" prefWidth="37.0" text="15" textFill="#e8d05d">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="combo1" layoutX="680.0" layoutY="122.0" onAction="#selectC1" prefHeight="25.0" prefWidth="69.0" />
+                  <ComboBox fx:id="combo2" layoutX="680.0" layoutY="165.0" onAction="#selectC2" prefHeight="25.0" prefWidth="69.0" />
+                  <ComboBox fx:id="combo3" layoutX="680.0" layoutY="208.0" onAction="#selectC3" prefHeight="25.0" prefWidth="69.0" />
+                  <ComboBox fx:id="combo4" layoutX="680.0" layoutY="250.0" onAction="#selectC4" prefHeight="25.0" prefWidth="69.0" />
+                  <ComboBox fx:id="combo5" layoutX="680.0" layoutY="299.0" onAction="#selectC5" prefHeight="25.0" prefWidth="69.0" />
+                  <ComboBox fx:id="combo6" layoutX="680.0" layoutY="342.0" onAction="#selectC6" prefHeight="25.0" prefWidth="69.0" />
+                  <ComboBox fx:id="combo7" layoutX="680.0" layoutY="385.0" onAction="#selectC7" prefHeight="25.0" prefWidth="69.0" />
+                  <ComboBox fx:id="combo8" layoutX="680.0" layoutY="428.0" onAction="#selectC8" prefHeight="25.0" prefWidth="69.0" />
+                  <ComboBox fx:id="combo9" layoutX="680.0" layoutY="477.0" onAction="#selectC9" prefHeight="25.0" prefWidth="69.0" />
+                  <Label layoutX="107.0" layoutY="425.0" prefHeight="17.0" prefWidth="413.0" text="Strategic Management" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="517.0" lineSpacing="15.0" prefHeight="17.0" prefWidth="37.0" text="10" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="107.0" layoutY="517.0" prefHeight="17.0" prefWidth="413.0" text="Digital Image Processing" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="107.0" layoutY="557.0" prefHeight="17.0" prefWidth="413.0" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="576.0" layoutY="514.0" prefHeight="36.0" prefWidth="28.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="combo10" layoutX="680.0" layoutY="520.0" onAction="#selectC10" prefHeight="25.0" prefWidth="69.0" />
+                  <TextField fx:id="Sub10GPV" layoutX="789.0" layoutY="520.0" />
+                  <TextField fx:id="Sub10GP" layoutX="1002.0" layoutY="520.0" />
+                  <Button fx:id="ButtonNext" layoutX="1233.0" layoutY="659.0" mnemonicParsing="false" onAction="#btnNextOnaction" prefHeight="31.0" prefWidth="101.0" text="Go Next" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="ButtonBack" layoutX="67.0" layoutY="658.0" mnemonicParsing="false" onAction="#btnbackOnaction" prefHeight="31.0" prefWidth="81.0" text="Go back" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
